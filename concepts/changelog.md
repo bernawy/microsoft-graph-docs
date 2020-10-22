@@ -28,6 +28,18 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
 
+### Identity and access | Devices
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+| Addition | beta | Added the **deviceCategory** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **deviceOwnership** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **domainName** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **enrollmentProfileName** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **enrollmentType** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **isRooted** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **managementType** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **registrationDateTime** property to [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource. |
 
 ## November 2020
 
