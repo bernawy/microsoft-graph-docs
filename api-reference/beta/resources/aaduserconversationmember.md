@@ -29,11 +29,13 @@ Represents an Azure Active Directory user in a [chat](chat.md) or [channel](chan
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. Unique ID of the user.|
-|displayName| string | The display name of the user. |
-|roles| string collection | The roles for that user. |
-|userId| string | The guid of the user. |
-|email| string  | The email address of the user. |
+|id| String | Read-only. Unique ID of the user.|
+|displayName| String | The display name of the user. |
+|roles| String collection | The roles for that user. |
+|userId| String | The guid of the user. |
+|email| String  | The email address of the user. |
+|tenantId| string  | TenantId which the AAD User belongs to. |
+|visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. |
 
 ## JSON representation
 
@@ -41,17 +43,24 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.aadUserConversationMember"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.aadUserConversationMember",
+  "baseType": "microsoft.graph.conversationMember",
+  "openType": false
+}
+-->
+``` json
 {
-  "id": "string (identifier)",
-  "displayName" : "string",
-  "roles" : ["string"],
-  "userId" : "string",
-  "email" : "string"
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "id": "String (identifier)",
+  "roles": [
+    "String"
+  ],
+  "displayName": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)",
+  "userId": "String",
+  "email": "String",
+  "tenantId": "String"
 }
 ```
 
@@ -67,5 +76,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
