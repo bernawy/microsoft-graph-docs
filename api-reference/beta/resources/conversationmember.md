@@ -35,6 +35,7 @@ See also [aadUserConversationMember](aaduserconversationmember.md).
 |id|String| Read-only. Unique ID of the user.|
 |displayName| string | The display name of the user. |
 |roles| string collection | The roles for that user. |
+|visibleHistoryStartDateTime| DateTimeOffset | The timestamp denoting how far back a conversation's history is shared with the conversation member. |
 
 ## JSON representation
 
@@ -42,19 +43,21 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.conversationMember",
-  "baseType": "",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
-  "displayName": "String",
+  "@odata.type": "#microsoft.graph.conversationMember",
   "id": "String (identifier)",
-  "roles": ["String"]
+  "roles": [
+    "String"
+  ],
+  "displayName": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
 
